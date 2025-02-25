@@ -1,0 +1,8 @@
+name: 'meta-llama/Meta-Llama-3.1-70B-Instruct'
+use_fp16: True 
+use_flashattn2: False 
+prompt_max_len: 120000
+response_max_len: 8000 
+n_beams: 1 
+use_sampling: True 
+sampling_temp: 0.7

@@ -1,0 +1,26 @@
+[project]
+name = "ward"
+version = "0.1.0"
+description = "Ward: Provable RAG Dataset Inference via LLM Watermarks"
+readme = "README.md"
+authors = [
+    { name = "Nikola Jovanovic", email = "nikola.jovanovic@inf.ethz.ch" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "datasets>=3.2.0",
+    "openai>=1.59.5",
+    "pydantic>=2.10.4",
+    "torch >= 2.1.2",
+    "tqdm >= 4.66.1",
+    "transformers >= 4.36.2",
+    "anthropic>=0.42.0",
+    "matplotlib>=3.10.0",
+    "scipy>=1.15.1",
+    "antlr4-python3-runtime==4.11",
+    "sentence-transformers>=3.4.1",
+    "pymilvus>=2.5.4",
+    "together>=1.4.1",
+    "sacremoses>=0.1.1",
+    "sentencepiece>=0.2.0",
+]

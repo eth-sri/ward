@@ -1,0 +1,5 @@
+.history/
+.mypy_cache/
+__pycache__/
+results*
+experiment.db

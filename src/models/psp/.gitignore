@@ -1,0 +1,6 @@
+.idea
+STS
+__pycache__
+paraphrase-at-scale
+paraphrase-at-scale-english
+model.para.lc.100.pt

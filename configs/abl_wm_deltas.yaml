@@ -1,0 +1,31 @@
+meta:
+  device: 'cuda'
+  seed: [1,2,3,4,5]
+  out_root_dir: 'out/'
+rag:
+  model:
+    cfg_path: ['configs/model/llama3.1_70b_together.yaml'] 
+    skip: false
+  embedder_name: 'sentence-transformers/all-MiniLM-L6-v2'
+  n_shots: 3 
+  defended: [true]
+attacker:
+  model:
+    cfg_path: 'configs/model/llama3.1_8b.yaml' 
+    skip: false
+  algos:
+    - "watermark" 
+  give_explicit_ids: true
+  watermark:
+      scheme: 'kgw'
+      generation:
+        - seeding_scheme: ['ff-position_prf-2-False-1548585']
+          gamma: 0.25
+          delta: [0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5]
+      detection:
+        normalizers: []
+        ignore_repeated_ngrams: true 
+        z_threshold: 4.0 
+eval:
+  setting1: true 
+  setting2: true 

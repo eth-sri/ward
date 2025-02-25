@@ -1,0 +1,8 @@
+name: 'claude3.5sonnet'
+use_fp16: False 
+use_flashattn2: False 
+prompt_max_len: 800
+response_max_len: 800 
+n_beams: 1 
+use_sampling: True 
+sampling_temp: 0.7
