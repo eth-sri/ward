@@ -63,7 +63,7 @@ If you use our code please cite the following.
 @inproceedings{jovanovic2025ward,
     author = {Jovanović, Nikola and Staab, Robin and Baader, Maximilian and Vechev, Martin},
     title = {Ward: Provable RAG Dataset Inference via LLM Watermarks},
-    journal = {{ICLR}},
+    booktitle = {{ICLR}},
     year = {2025}
 }
 ```
